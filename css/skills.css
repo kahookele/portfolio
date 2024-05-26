@@ -10,11 +10,12 @@ font-family: "Roboto", sans-serif;
 
 /* main section */
 section {
-  border: 1px solid;
   width: 100vw;
+  margin-top: 10px;
 }
 section h1 {
-  margin-left: 10%;
+  text-align: center;
+  animation: fade-in 0.8s ease-in-out;
 }
 
 /* project container */
@@ -27,7 +28,6 @@ section h1 {
 
 /* projects */
 .grid-project {
-  border: 1px solid;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -38,16 +38,61 @@ section h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 425px;
   width: 50px;
   border: 1px solid;
+  font-weight: bold;
+  writing-mode: vertical-lr;
+  background-size: cover;
+  font-size: 1.3rem;
+  background-position: right;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+}
+.grid-project a {
+  text-decoration: none;
+  color: black;
+}
+.project-one {
+  background-image: url(../images/project-one.png);
+  animation: up-one 0.5s ease-in-out;
+}
+.project-two {
+  background-image: url(../images/project-two.png);
+  animation: up-one 0.6s ease-in-out;
+}
+.project-three {
+  background-image: url(../images/project-three.png);
+  animation: up-one 0.7s ease-in-out;
+}
+.project-four {
+  background-image: url(../images/project-four.png);
+  animation: up-one 0.8s ease-in-out;
 }
 
 
 /* hovers */
 .project:hover {
-  width: 650px;
+  width: 800px;
   z-index: 10;
+  color: rgba(0, 0, 0, 0);
+}
+
+
+/* animations */
+@keyframes up-one {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
