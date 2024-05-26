@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+/*
+fonts
+font-family: "Open Sans", sans-serif;
+font-family: "Roboto", sans-serif;
+*/
+
+:root {
+  --primary: #ff9800;
+  --secondary: #263238;
+}
+
+header {
+  width: 99.1%;
+  margin-top: 50px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* introduction */
+.intro-container {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* name, pic, position and button */
+.intro-one {
+  font-size: 3rem;
+  font-weight: 500;
+  animation: intro-one 0.5s ease;
+}
+.intro-two {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50%;
+  text-align: center;
+  animation: intro-two 0.8s ease;
+}
+.img {
+  height: 175px;
+  width: 175px;
+  background-image: url(../images/profile-pic.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 99%;
+  animation: drop 0.8s ease;
+}
+
+/* social media icons */
+i {
+  font-size: 2.2rem;
+  color: black;
+  cursor: pointer;
+}
+.fa-instagram {
+  animation: up 0.9s;
+}
+.fa-github {
+  animation: left 0.9s;
+}
+.fa-linkedin {
+  animation: right 0.9s;
+}
+
+/* content images */
+.content-images {
+  border: 1px solid;
+  width: 99.9%;
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.content {
+  height: 200px;
+  width: 175px;
+  background-position: center;
+}
+
+
+
+/* animations */
+@keyframes drop {
+  0% { transform: translateY(-50px); opacity: 0;}
+  100% {transform: translateY(0); opacity: 1;}
+}
+@keyframes intro-one {
+  0% { transform: translateY(50px); opacity: 0;}
+  100% {transform: translateY(0); opacity: 1;}
+}
+@keyframes intro-two {
+  0% { transform: translateY(50px); opacity: 0;}
+  100% {transform: translateY(0); opacity: 1;}
+}
+@keyframes up {
+  0% { transform: translateY(50px); opacity: 0;}
+  100% {transform: translateY(0); opacity: 1;}
+}
+@keyframes right {
+  0% { transform: translateX(-50px); opacity: 0;}
+  100% {transform: translateX(0); opacity: 1;}
+}
+@keyframes left {
+  0% { transform: translateX(50px); opacity: 0;}
+  100% {transform: translateX(0); opacity: 1;}
+}

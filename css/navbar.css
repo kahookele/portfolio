@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+/*
+fonts
+font-family: "Open Sans", sans-serif;
+font-family: "Roboto", sans-serif;
+font-family: "Roboto Slab", serif;
+*/
+
+:root {
+  --secondary: #263238;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+}
+
+/* navbar */
+nav {
+  width: 99.9%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: drop 0.8s ease;
+}
+.logo {
+  width: 100%;
+  padding: 10px;
+}
+.logo h1 a {
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 90%;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.logo h1 a:hover {
+  transform: scale(1.1);
+}
+
+/* hamburger menu */
+.hamburger {
+  display: none;
+  position: relative;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+/* navbar links */
+.nav-links {
+  display: flex;
+  width: 100%;
+}
+.links {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 10px;
+  font-size: 1.2rem;
+  list-style: none;
+}
+ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  transition: 0.2s ease-in-out;
+}
+ul li a:hover {
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+  .links {
+    border-bottom: 1px solid;
+    border-radius: 5px 5px 5px 5px;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    background-color: white;
+    z-index: 10;
+    top: 65px;
+    left: 0;
+    padding: 5px;
+    min-height: fit-content;
+    width: 100%;
+    text-align: center;
+  }
+  ul li a:hover {
+    font-weight: bold;
+    transform: scale(1.1);
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+  }
+}
+
+
+/* animations */
+@keyframes drop {
+  0% { transform: translateY(-50px); opacity: 0;}
+  100% {transform: translateY(0); opacity: 1;}
+}
