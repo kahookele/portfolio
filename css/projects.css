@@ -84,7 +84,6 @@ section {
 /* media queries */
 @media screen and (max-width: 500px) {
   .project-container {
-    margin-left: 35px;
     margin-top: 5rem;
     display: flex;
     justify-content: center;
