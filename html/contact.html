@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <script src="../javascript/navbar.js" defer></script>
+  <script src="../javascript/contact.js" defer></script>
+  <!-- email service -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <h1><a href="#">JK</a></h1>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="nav-links" id="nav-links">
+      <ul class="links" id="links">
+        <li><a href="../html/home.html">Home</a></li>
+        <li><a href="../html/about.html">About</a></li>
+        <li><a href="../html/projects.html">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="form-section">
+    <div class="modal" id="modal">
+      <div id="x">x</div>
+      <div class="message" id="modal-message">Mahalo for your inquiry. I will get back to you soon!</div>
+    </div>
+    <div class="form-container">
+      <form id="email-form">
+        <h2>Email <span style="color: #ef6c00">Me</span></h2>
+        <input type="text" name="user_name" placeholder="Your name" required>
+        <input type="email" name="user_email" placeholder="Your email" required>
+        <textarea name="message" placeholder="Your message" required></textarea>
+        <button type="submit" value="Send" id="sent">Send Email</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
