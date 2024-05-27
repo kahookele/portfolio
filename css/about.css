@@ -9,6 +9,11 @@ font-family: "Roboto", sans-serif;
 font-family: "Roboto Slab", serif;
 */
 
+:root {
+  --primary: #ef6c00;
+  --secondary: #263238;
+}
+
 /* about section */
 .about-section {
   width: 99.9%;
@@ -79,6 +84,36 @@ font-family: "Roboto Slab", serif;
   animation: slideUp-four 1.4s;
 }
 
+/* footer section */
+footer {
+  margin-top: 5.5rem;
+  height: 45px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 12px;
+}
+i {
+  font-size: 1.8rem;
+  color: black;
+  cursor: pointer;
+}
+.fa-instagram {
+  animation: down 0.9s;
+  color: var(--primary);
+}
+.fa-github {
+  animation: left 0.9s;
+  color: var(--primary);
+}
+.fa-linkedin {
+  animation: right 0.9s;
+  color: var(--primary);
+}
+
 
 
 /* media queries */
@@ -119,4 +154,18 @@ font-family: "Roboto Slab", serif;
 @keyframes slideUp-four {
   0% {transform: translateY(40px); opacity: 0;}
   100% {transform: translateY(0); opacity: 1;}
+}
+
+/* icon animations */
+@keyframes down {
+  0% { transform: translateY(-75px); opacity: 0;}
+  100% {transform: translateY(0); opacity: 1;}
+}
+@keyframes right {
+  0% { transform: translateX(-150px); opacity: 0;}
+  100% {transform: translateX(0); opacity: 1;}
+}
+@keyframes left {
+  0% { transform: translateX(150px); opacity: 0;}
+  100% {transform: translateX(0); opacity: 1;}
 }

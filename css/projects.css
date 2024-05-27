@@ -13,9 +13,10 @@ section {
   width: 100vw;
   margin-top: 10px;
 }
-section h1 {
+.grid-project h1 {
   text-align: center;
-  animation: fade-in 0.8s ease-in-out;
+  animation: dropAndRotate 2s forwards;
+  transform: rotate(-90deg);
 }
 
 /* project container */
@@ -88,11 +89,16 @@ section h1 {
     transform: translateY(0%);
   }
 }
-@keyframes fade-in {
+@keyframes dropAndRotate {
   0% {
-    opacity: 0;
+      transform: translateY(-100px) rotate(0deg);
+      opacity: 0;
+  }
+  50% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
   }
   100% {
-    opacity: 1;
+      transform: translateY(0) rotate(90deg);
   }
 }

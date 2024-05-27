@@ -10,6 +10,7 @@ font-family: "Roboto Slab", serif;
 */
 
 :root {
+  --primary: #ef6c00;
   --secondary: #263238;
 }
 
@@ -17,6 +18,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Roboto Slab", serif;
+  background-color: var(--secondary);
+  color: white;
 }
 
 /* navbar */
@@ -37,12 +40,13 @@ nav {
   padding: 5px;
   border-radius: 90%;
   cursor: pointer;
-  color: black;
+  color: white;
   text-decoration: none;
   transition: 0.3s ease-in-out;
 }
 .logo h1 a:hover {
   transform: scale(1.1);
+  color: var(--primary);
 }
 
 /* hamburger menu */
@@ -51,6 +55,10 @@ nav {
   position: relative;
   padding: 10px;
   font-size: 1.3rem;
+  font-weight: 300;
+}
+.hamburger i {
+  color: white;
 }
 
 /* navbar links */
@@ -69,13 +77,14 @@ nav {
 ul li a {
   cursor: pointer;
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: 300;
   transition: 0.2s ease-in-out;
 }
 ul li a:hover {
   font-weight: bold;
   transform: scale(1.1);
+  color: var(--primary);
 }
 
 @media screen and (max-width: 600px) {
@@ -88,7 +97,7 @@ ul li a:hover {
     flex-direction: column;
     gap: 5px;
     position: absolute;
-    background-color: white;
+    background-color: var(--secondary);
     z-index: 10;
     top: 65px;
     left: 0;
