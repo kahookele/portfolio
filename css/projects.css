@@ -84,14 +84,16 @@ section {
 /* media queries */
 @media screen and (max-width: 500px) {
   .project-container {
-    margin-top: 5rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid white;
   }
   .grid-project {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
   }
   .grid-project h1 {
     display: none;
@@ -102,6 +104,7 @@ section {
     text-align: center;
     transform: rotate(-90deg);
     background-size: 2000%;
+    transition: none;
   }
   .grid-project a div {
     font-size: 1rem;
