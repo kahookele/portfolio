@@ -62,7 +62,9 @@ header {
   background-position: center;
   background-size: cover;
   border-radius: 99%;
+  cursor: pointer;
   animation: drop 0.8s ease;
+  transition: 0.5s ease-in;
 }
 
 /* social media icons */
@@ -106,6 +108,17 @@ i {
   width: 175px;
   background-position: center;
 }
+
+
+
+
+/* hovers */
+.img:hover {
+  border-radius: 5%;
+  height:200px;
+  width:200px;
+}
+
 
 
 

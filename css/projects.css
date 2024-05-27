@@ -74,8 +74,9 @@ section {
 
 /* hovers */
 .project:hover {
-  width: 800px;
+  width: 750px;
   z-index: 10;
+  background-position: center;
   color: rgba(0, 0, 0, 0);
 }
 
