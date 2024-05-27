@@ -81,6 +81,35 @@ section {
 }
 
 
+/* media queries */
+@media screen and (max-width: 500px) {
+  .project-container {
+    margin-left: 35px;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-project h1 {
+    display: none;
+  }
+  .project {
+    height: 125px;
+    width: 125px;
+    text-align: center;
+    transform: rotate(-90deg);
+    background-size: 2000%;
+  }
+  .grid-project a div {
+    font-size: 1rem;
+  }
+}
+
+
 /* animations */
 @keyframes up-one {
   0% {

@@ -74,6 +74,14 @@ button:hover {
 }
 
 
+/* media queries */
+@media screen and (max-width: 600px) {
+  input, textarea {
+    width: 90%;
+  }
+}
+
+
 @keyframes up {
   0% { transform: translateY(50px); opacity: 0;}
   100% { transform: translateY(0); opacity: 1;}

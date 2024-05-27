@@ -110,8 +110,6 @@ i {
 }
 
 
-
-
 /* hovers */
 .img:hover {
   border-radius: 5%;
@@ -120,6 +118,14 @@ i {
 }
 
 
+/* media queries */
+@media screen and (max-width: 500px) {
+  .intro-one {
+    text-align: center;
+    font-size: 2.5rem;
+    width: 100%;
+  }
+}
 
 
 /* animations */
