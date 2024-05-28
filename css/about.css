@@ -35,23 +35,23 @@ font-family: "Roboto Slab", serif;
 /* grid */
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   font-size: 1rem;
 }
 .item-one {
   text-align: center;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   width: 90%;
 }
 #about-me {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 /* images */
 .item-two {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
   min-height: auto;
@@ -62,7 +62,7 @@ font-family: "Roboto Slab", serif;
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 80%;
+  width: 90%;
   border-radius: 5%;
   background-size: cover;
 }
