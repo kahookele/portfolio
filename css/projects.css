@@ -8,6 +8,11 @@ font-family: "Open Sans", sans-serif;
 font-family: "Roboto", sans-serif;
 */
 
+:root {
+  --primary: #ef6c00;
+  --secondary: #263238;
+}
+
 /* main section */
 section {
   width: 100vw;
@@ -27,7 +32,7 @@ section {
   align-items: center;
 }
 
-/* projects */
+/* grid projects one */
 .grid-project {
   width: 100%;
   display: flex;
@@ -80,33 +85,10 @@ section {
   color: rgba(0, 0, 0, 0);
 }
 
-
 /* media queries */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .project-container {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .grid-project {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-  }
-  .grid-project h1 {
     display: none;
-  }
-  .project {
-    height: 125px;
-    width: 125px;
-    text-align: center;
-    transform: rotate(-90deg);
-    background-size: 2000%;
-    transition: none;
-  }
-  .grid-project a div {
-    font-size: 1rem;
   }
 }
 
@@ -131,5 +113,77 @@ section {
   }
   100% {
       transform: translateY(0) rotate(90deg);
+  }
+}
+
+/* --------------------------grid projects two-------------------------- */
+.project-container-two { display: none; }
+
+@media screen and (max-width: 550px) {
+  .project-container-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+  }
+  .project-container-two h1 {
+    color: var(--primary);
+  }
+  .project-container-two p {
+    padding: 5px;
+    text-align: center;
+  }
+  .grid-project-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    width: 75%;
+    gap: 3px;
+  }
+  .project {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-image: none;
+    background-color: white;
+  }
+  .grid-project-two a {
+    height: 100%;
+    width: 100%;
+    color: #ef6c00;
+    text-decoration: none;
+  }
+
+  /* projects */
+  .proj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: none;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transition: 0.2s ease-in;
+  }
+  .project-one {
+    border-top-left-radius: 5%;
+  }
+  .project-two {
+    border-top-right-radius: 5%;
+  }
+  .project-three {
+    border-bottom-left-radius: 5%;
+  }
+  .project-four {
+    border-bottom-right-radius: 5%;
+  }
+
+  /* hover */
+  .proj:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
   }
 }
