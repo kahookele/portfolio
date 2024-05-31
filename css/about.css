@@ -71,6 +71,8 @@ font-family: "Roboto Slab", serif;
   display: block;
   height: 80%;
   width: 80%;
+  border-radius: 2%;
+  z-index: 1000;
   position: absolute;
   background-size: cover;
 }
