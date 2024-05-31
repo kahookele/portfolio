@@ -66,6 +66,14 @@ font-family: "Roboto Slab", serif;
   border-radius: 5%;
   background-size: cover;
 }
+.img.expanded {
+  /* Styles when expanded */
+  display: block;
+  height: 80%;
+  width: 80%;
+  position: absolute;
+  background-size: cover;
+}
 .img-one {
   background-image: url('../images/about-three.png');
   justify-self: end;
@@ -89,7 +97,7 @@ font-family: "Roboto Slab", serif;
 
 /* footer section */
 footer {
-  margin-top: 5.5rem;
+  margin-top: 1.3rem;
   height: 45px;
 }
 .buttons {
@@ -100,7 +108,7 @@ footer {
   gap: 12px;
 }
 i {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: black;
   cursor: pointer;
 }
